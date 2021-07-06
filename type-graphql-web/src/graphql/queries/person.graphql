@@ -1,0 +1,13 @@
+query Person($person: String!){
+  person(person: $person){
+    name
+    height
+    mass
+    gender
+    homeworld{
+      name
+      terrain
+      population
+    }
+  }
+}

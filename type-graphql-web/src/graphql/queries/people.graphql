@@ -1,0 +1,13 @@
+query People($pageNumber: Float!){
+  people(pageNumber: $pageNumber){
+    name
+    height
+    mass
+    gender
+    homeworld{
+      name
+      terrain
+      population
+    }
+  }
+}
